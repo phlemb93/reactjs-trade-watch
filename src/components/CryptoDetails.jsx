@@ -10,6 +10,14 @@ const CryptoDetails = () => {
 
         <div>
             <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
+            <h1>Crypto Details ID = { symbol }</h1>
         </div>
     )
 }
