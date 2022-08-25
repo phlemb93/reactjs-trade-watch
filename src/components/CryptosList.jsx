@@ -1,5 +1,4 @@
 import { SiBinance } from 'react-icons/si'
-import { Link } from 'react-router-dom'
 
 const CryptosList = ({ cryptos, search }) => {
 
@@ -29,8 +28,6 @@ const CryptosList = ({ cryptos, search }) => {
        
 
     return (
-
-        <Link to={`/symbol=${crypto.symbol}`}>
 
             <div className="coin-details" key={crypto.symbol}>
 
@@ -89,8 +86,6 @@ const CryptosList = ({ cryptos, search }) => {
                 </div>
 
             </div>
-
-        </Link>
     )
                 }
             } 

@@ -1,4 +1,4 @@
-import { Home, NavBar, Footer, CryptoDetails, NotFound } from './components';
+import { Home, NavBar, Footer, NotFound } from './components';
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -18,7 +18,6 @@ function App() {
       <main>
       <Routes>
         <Route exact path="/" element={ <Home search={ search } /> } />
-        <Route  path="/symbol=:id" element={ <CryptoDetails /> } />
         <Route path="/*" element={ <NotFound /> } />
       </Routes>
       </main>
