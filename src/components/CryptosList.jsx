@@ -34,11 +34,11 @@ const CryptosList = ({ cryptos, search }) => {
                 <div className="col-1">
                     <div className="up">
                         <div className="symbol">
-                            <p style={{fontSize:'18px', color:'#DCD5C2'}}>
+                            <p style={{fontSize:'14px', color:'#DCD5C2'}}>
                             { crypto.symbol }
                             </p>
                         </div>
-                        <div style={{fontSize:'14px'}}  className="binance">
+                        <div style={{fontSize:'11px'}}  className="binance">
                             <div className="logo"><SiBinance /></div>
                             <p>BINANCE</p>
                         </div>
@@ -54,11 +54,11 @@ const CryptosList = ({ cryptos, search }) => {
                 <div className="col-2">
                     <div className="up">
                         <div className="price">
-                            <p style={{fontSize:'18px', color:'#DCD5C2'}}>{  crypto.askPrice }</p>
+                            <p style={{fontSize:'14px', color:'#DCD5C2'}}>{  crypto.askPrice }</p>
                         </div>
 
                         <div style={{
-                            color: priceChange < 0 ? 'red' : 'green', fontSize: '14px'
+                            color: priceChange < 0 ? 'red' : 'green', fontSize: '11px'
                         }}  className="price-change">
 
                             { priceChange > 0 ? (
@@ -78,7 +78,7 @@ const CryptosList = ({ cryptos, search }) => {
 
                     <div className="down">
                         <div className="volume">
-                            <div style={{fontSize:'13px'}}>
+                            <div style={{fontSize:'10px'}}>
                             Vol(24H): { volumeValueFormatted }
                             </div>
                         </div>

@@ -42,7 +42,7 @@ body {
   margin-right: 10px;
 }
 .navbar .right .refresh-icon {
-  font-size: 18px;
+  font-size: 12px;
   cursor: pointer;
   color: gray;
   transition: all ease-in-out 1s;
@@ -52,7 +52,6 @@ body {
   animation: spin 1s ease-in-out;
 }
 .navbar .right .search-box {
-  margin-left: 16px;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 6px 12px;
@@ -68,14 +67,14 @@ body {
 }
 .navbar .right .search-box .search-icon {
   cursor: e-resize;
-  font-size: 18px;
+  font-size: 14px;
 }
 .navbar .right .search-box input {
   background-color: transparent;
   border: none;
   color: #DCD5C2;
   margin-left: 2px;
-  font-size: 16px;
+  font-size: 12px;
 }
 .navbar .right .search-box input:focus {
   outline: none;
@@ -89,7 +88,7 @@ body {
   margin: 50px auto;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(328px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(262px, auto));
   gap: 5px;
   color: gray;
 }
@@ -101,9 +100,9 @@ body {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  padding: 12px 24px 12px 24px;
-  position:relative;
-  height: 150px;
+  padding: 0 12px 8px 12px;
+  position: relative;
+  height: 100px;
   transition: all ease-in 0.5s;
 }
 .coin-details:hover {
@@ -127,7 +126,7 @@ body {
   width: 100%;
 }
 .col-1 .up .binance {
-  margin-top: -26px;
+  margin-top: -20px;
   display: flex;
   justify-content: flex-start;
 }
@@ -135,8 +134,8 @@ body {
   margin-left: 5px;
 }
 .col-1 .up .binance .logo {
-  margin-top: 14px;
-  font-size: 16px;
+  margin-top: 12px;
+  font-size: 11px;
 }
 
 /*SECOND COLUMN INSIDE THE CONTAINER OF EACH CRYPTOCURRENCY*/
@@ -155,23 +154,12 @@ body {
   width: 100%;
 }
 .col-2 .up .price-change {
-  margin-top: -26px;;
+  margin-top: -20px;;
   display: flex;
   justify-content: flex-end;
 }
 .col-2 .up .price-change p:first-child {
   margin-right: 5px;
-}
-
-.coin-details .icon {
-  position:absolute;
-  top: 2px;
-  right: 6px;
-  color: gray;
-  font-size: 20px;
-}
-.coin-details .icon:hover {
-  color: #73BEC3;
 }
 
 /* WHEN LOADING DATA */
