@@ -31,7 +31,7 @@ body {
 .navbar h3 {
   color: #DCD5C2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 .navbar .right {
   display: flex;
@@ -39,7 +39,7 @@ body {
   align-items: center;
   color: gray;
   width: 250px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 .navbar .right .refresh-icon {
   font-size: 18px;
@@ -55,9 +55,12 @@ body {
   margin-left: 16px;
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 4px 12px;
+  padding: 6px 12px;
   caret-color: #DCD5C2;
   transition: all ease-in 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar .right .search-box:hover {
   border: 1px solid#DCD5C2;
@@ -72,8 +75,7 @@ body {
   border: none;
   color: #DCD5C2;
   margin-left: 2px;
-  padding-bottom: 2px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .navbar .right .search-box input:focus {
   outline: none;
@@ -239,4 +241,9 @@ body {
 }
 .not-found .spinner {
   animation: spin 2s linear infinite normal;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
 }

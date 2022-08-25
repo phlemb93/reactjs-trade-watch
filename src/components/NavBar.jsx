@@ -1,5 +1,6 @@
 import { BiSearchAlt } from 'react-icons/bi'
 import { FiRefreshCcw } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 const NavBar = ({ handleChange }) => {
 
@@ -9,7 +10,7 @@ const NavBar = ({ handleChange }) => {
 
     return (
         <div className="navbar">
-            <h3>Trade<span style={{color:'#73BEC3'}}>Watch</span></h3>
+            <Link to="/"><h3>Trade<span style={{color:'#73BEC3'}}>Watch</span></h3></Link>
 
             <div className="right">
                 <FiRefreshCcw onClick={ handleClick } className="refresh-icon" />

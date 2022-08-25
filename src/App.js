@@ -18,6 +18,7 @@ function App() {
       <main>
       <Routes>
         <Route exact path="/" element={ <Home search={ search } /> } />
+        <Route  path="/symbol=:id" element={ <CryptoDetails /> } />
         <Route path="/*" element={ <NotFound /> } />
       </Routes>
       </main>
