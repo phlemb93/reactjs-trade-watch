@@ -8,7 +8,7 @@ const Footer = () => {
 
     return (
     <div className="footer">
-         <p>find me on</p>
+         <p>connect with me</p>
 
         <a href= {urlTwitter} target="_blank" className="icon twitter-icon">
            <FaTwitter />

@@ -197,10 +197,11 @@ body {
 }
 .footer p {
   padding: 0 10px;
+  font-size: 14px;
 }
 
 .footer .icon {
-  font-size: 24px;
+  font-size: 16px;
   padding: 5px 12px 0;
   border-right: 1px solid grey;
   color: #dcd5c2be;

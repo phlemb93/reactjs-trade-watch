@@ -9,7 +9,7 @@ const Home = ({ search }) => {
     return (
         <div className="home">
             { cryptos && <div><CryptosList search={search} cryptos={cryptos} /></div> }
-            { isPending && <div className="loading-data">Loading <ImSpinner6 className="spinner" /></div> }
+            { isPending && <div className="loading-data" style={{fontSize:"16px"}}>Loading <ImSpinner6 className="spinner" /></div> }
             { error && <div>{ error }</div> }
         </div>
     )
