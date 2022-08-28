@@ -3,7 +3,7 @@ import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
 
     const urlTwitter = "https://twitter.com/Phlemb2";
-    const urlLinkedIn = "https://www.linkedin.com/in/%E2%80%98femi-badrudeen-5a2bba155/";
+    const urlLinkedIn = "https://www.linkedin.com/in/oluwafemi-badrudeen/";
     const urlGithub = "https://github.com/phlemb93";
 
     return (
