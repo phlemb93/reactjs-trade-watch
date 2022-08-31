@@ -18,65 +18,60 @@ body {
   width: 100%;
   height: 50px;
   background-color: #091020;
-  border-bottom: 1px solid #dcd5c2c4;
+  border-bottom: 1px solid #dcd5c2be;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
   position: fixed;
   top: 0;
   z-index: 1;
 }
 
-.navbar h3 {
+.navbar h4 {
   color: #DCD5C2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 10px;
 }
-.navbar .right {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: gray;
-  width: 250px;
-  margin-right: 10px;
-}
-.navbar .right .refresh-icon {
+
+.navbar .refresh-icon {
   font-size: 12px;
   cursor: pointer;
-  color: gray;
+  color: #DCD5C2;
   transition: all ease-in-out 1s;
 }
-.navbar .right .refresh-icon:hover {
+.navbar .refresh-icon:hover {
   color: #DCD5C2;
-  animation: spin 1s ease-in-out;
+  animation: spin 0.5s ease-in-out;
 }
-.navbar .right .search-box {
+.navbar .search-box {
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 6px 12px;
+  padding: 3px 6px;
   caret-color: #DCD5C2;
   transition: all ease-in 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: gray;
+  margin-right: 10px;
 }
-.navbar .right .search-box:hover {
+.navbar .search-box:hover {
   border: 1px solid#DCD5C2;
   color: #DCD5C2;
 }
-.navbar .right .search-box .search-icon {
+.navbar .search-box .search-icon {
   cursor: e-resize;
-  font-size: 14px;
+  font-size: 12px;
+  color: #DCD5C2;
 }
-.navbar .right .search-box input {
+.navbar .search-box input {
   background-color: transparent;
   border: none;
   color: #DCD5C2;
   margin-left: 2px;
   font-size: 12px;
 }
-.navbar .right .search-box input:focus {
+.navbar .search-box input:focus {
   outline: none;
   border: none;
 }
@@ -194,14 +189,13 @@ body {
   opacity: 0.9;
   padding: 10px 0;
   border-top: 1px solid #dcd5c2be;
+  font-size: 14px;
 }
 .footer p {
   padding: 0 10px;
-  font-size: 14px;
 }
 
 .footer .icon {
-  font-size: 16px;
   padding: 5px 12px 0;
   border-right: 1px solid grey;
   color: #dcd5c2be;
@@ -236,3 +230,53 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+
+ @media (max-width: 480px) { 
+  .navbar {
+    flex-direction: column;
+    height: 10vh;
+    position: relative;
+  }
+  .navbar h4 {
+    margin-top: 15px;
+  }
+  .navbar .refresh-icon {
+    position: absolute;
+    left: 28%;
+    bottom: 13px;
+  }
+  .navbar .search-box {
+    position: absolute;
+    right: 18%;
+    bottom: 8px;
+    padding: 2px 4px;
+  }
+  .coins-container {
+    margin: 0;
+  }
+  .footer {
+    font-size: 13px;
+  }
+} 
+
+
+ @media (max-width: 280px) { 
+  .navbar {
+    flex-direction: column;
+    height: 15vh;
+    position: relative;
+  }
+  .navbar .refresh-icon {
+    position: absolute;
+    left: 20%;
+    bottom: 19px;
+  }
+  .navbar .search-box {
+    position: absolute;
+    right: 6%;
+    bottom: 14px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+} 
