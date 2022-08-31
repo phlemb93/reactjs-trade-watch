@@ -234,7 +234,7 @@ a, a:hover, a:focus, a:active {
  @media (max-width: 480px) { 
   .navbar {
     flex-direction: column;
-    height: 10vh;
+    height: 11vh;
     position: relative;
   }
   .navbar h4 {
@@ -242,14 +242,14 @@ a, a:hover, a:focus, a:active {
   }
   .navbar .refresh-icon {
     position: absolute;
-    left: 28%;
+    left: 25%;
     bottom: 13px;
   }
   .navbar .search-box {
     position: absolute;
-    right: 18%;
+    right: 15%;
     bottom: 8px;
-    padding: 2px 4px;
+    padding: 0 0 0 5px;
   }
   .coins-container {
     margin: 0;
