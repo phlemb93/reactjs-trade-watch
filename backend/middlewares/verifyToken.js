@@ -5,7 +5,7 @@ const verifyToken = (req, res, next) => {
     const { authorization } = req.headers;
 
     if(!authorization) {
-        res.status(400).json("You're not authenticated")
+       return  res.status(400).json("You're not authenticated")
     }
     next();    
 }
@@ -15,7 +15,7 @@ const verifyTokenAndAuthorization = (req, res, next) => {
     const { authorization } = req.headers;
 
     if(!authorization) {
-        res.status(400).json("You're not authenticated")
+       return res.status(400).json("You're not authenticated")
     }
 
     const token = authorization.split(" ")[1];
